@@ -137,8 +137,6 @@ Text Label 1650 2050 2    60   ~ 0
 P0.00
 Text Label 1650 2250 2    60   ~ 0
 P0.01
-Text GLabel 10475 1700 2    60   Input ~ 0
-DATA-
 $Comp
 L Device:R R2
 U 1 1 5CAA680B
@@ -184,12 +182,6 @@ Text GLabel 3000 2950 2    60   Input ~ 0
 DCCH
 Text Label 1650 2750 2    60   ~ 0
 P0.04
-Text GLabel 10475 1800 2    60   Input ~ 0
-DATA-
-Text GLabel 10475 1900 2    60   Input ~ 0
-DATA+
-Text GLabel 10475 2000 2    60   Input ~ 0
-DATA+
 Text GLabel 8675 3250 1    60   Input ~ 0
 CC1
 Text GLabel 8350 3250 1    60   Input ~ 0
@@ -214,34 +206,6 @@ F 1 "GND" H 8350 3400 50  0000 C CNN
 F 2 "" H 8350 3550 50  0001 C CNN
 F 3 "" H 8350 3550 50  0001 C CNN
 	1    8350 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5E5EC00A
-P 9875 2700
-F 0 "#PWR0111" H 9875 2450 50  0001 C CNN
-F 1 "GND" H 9875 2550 50  0000 C CNN
-F 2 "" H 9875 2700 50  0001 C CNN
-F 3 "" H 9875 2700 50  0001 C CNN
-	1    9875 2700
-	1    0    0    -1  
-$EndComp
-Text GLabel 10475 1400 2    60   Input ~ 0
-CC1
-Text GLabel 10475 1500 2    60   Input ~ 0
-CC2
-Text GLabel 10475 1200 2    60   Input ~ 0
-VBUS
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5C743564
-P 9875 1800
-F 0 "J1" H 9875 2625 50  0000 C CNN
-F 1 "USB-C Conn" H 9875 2550 50  0000 C CNN
-F 2 "nrfmicro:USB-C_C168688" H 9982 2575 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10025 1800 50  0001 C CNN
-	1    9875 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -284,7 +248,7 @@ Power and Filtering
 Wire Wire Line
 	2650 6300 2700 6300
 $Comp
-L Regulator_Linear:AP2112K-3.3 U2
+L nrfmicro-rescue:AP2112K-3.3-Regulator_Linear U2
 U 1 1 5EBF7400
 P 2350 6400
 F 0 "U2" H 2350 6742 50  0000 C CNN
@@ -548,81 +512,6 @@ Connection ~ 1950 6300
 Connection ~ 1725 6300
 Wire Wire Line
 	1725 6300 1950 6300
-Text Label 6350 2000 0    60   ~ 0
-P1.11
-Text Label 6350 1300 0    60   ~ 0
-P0.30
-Text Label 6350 1400 0    60   ~ 0
-P0.31
-Text Label 6350 1500 0    60   ~ 0
-P0.29
-Text Label 6350 1600 0    60   ~ 0
-P0.02
-Text Label 6350 1800 0    60   ~ 0
-P0.03
-Text Label 6350 1900 0    60   ~ 0
-P0.28
-$Comp
-L power:GND #PWR0113
-U 1 1 5EA776B5
-P 7150 1000
-F 0 "#PWR0113" H 7150 750 50  0001 C CNN
-F 1 "GND" H 7150 850 50  0000 C CNN
-F 2 "" H 7150 1000 50  0001 C CNN
-F 3 "" H 7150 1000 50  0001 C CNN
-	1    7150 1000
-	1    0    0    -1  
-$EndComp
-Text GLabel 6625 900  2    60   Input ~ 0
-VBAT
-Text GLabel 6625 1100 2    60   Input ~ 0
-RESET
-Text Label 6350 1700 0    60   ~ 0
-P1.13
-Text Label 5350 1300 2    60   ~ 0
-P0.15
-Text Label 5350 1400 2    60   ~ 0
-P0.17
-Text Label 5350 1500 2    60   ~ 0
-P0.20
-Text Label 5350 1800 2    60   ~ 0
-P0.09
-Text Label 5350 1900 2    60   ~ 0
-P0.10
-Text Label 5350 1600 2    60   ~ 0
-P0.13
-Text Label 5350 2000 2    60   ~ 0
-P1.06
-Text Label 5350 1700 2    60   ~ 0
-P0.24
-$Comp
-L power:GND #PWR0115
-U 1 1 5EA7A77D
-P 4975 1200
-F 0 "#PWR0115" H 4975 950 50  0001 C CNN
-F 1 "GND" H 4975 1050 50  0000 C CNN
-F 2 "" H 4975 1200 50  0001 C CNN
-F 3 "" H 4975 1200 50  0001 C CNN
-	1    4975 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 1200 4975 1200
-Text Label 5350 1000 2    60   ~ 0
-P0.08
-Text Label 5350 900  2    60   ~ 0
-P0.06
-$Comp
-L nrfmicro:ProMicro U4
-U 1 1 5AC0283B
-P 5850 1250
-F 0 "U4" H 5850 400 60  0000 C CNN
-F 1 "ProMicro" H 5850 1700 60  0000 C CNN
-F 2 "nrfmicro:pro_micro" H 5850 1250 60  0001 C CNN
-F 3 "" H 5850 1250 60  0001 C CNN
-	1    5850 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5F6F7451
@@ -699,9 +588,6 @@ Connection ~ 5750 4400
 Wire Wire Line
 	5750 4400 5825 4400
 Wire Wire Line
-	9575 2700 9875 2700
-Connection ~ 9875 2700
-Wire Wire Line
 	4375 6175 4425 6175
 Wire Wire Line
 	2600 4400 2600 4300
@@ -734,19 +620,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 1450 1650 1450
 Wire Wire Line
-	5350 1100 5350 1200
-Connection ~ 5350 1200
-Text GLabel 6625 1200 2    60   Input ~ 0
-EXT_VCC
-Wire Wire Line
-	6350 1200 6625 1200
-Wire Wire Line
-	6350 1100 6625 1100
-Wire Wire Line
-	6350 900  6625 900 
-Wire Wire Line
-	6350 1000 7150 1000
-Wire Wire Line
 	1625 6300 1725 6300
 Wire Wire Line
 	1325 6400 1325 6300
@@ -762,8 +635,6 @@ Wire Wire Line
 	1325 5950 1425 5950
 Wire Wire Line
 	1725 5650 1725 5750
-NoConn ~ 10475 2300
-NoConn ~ 10475 2400
 Wire Wire Line
 	1325 2750 1650 2750
 Wire Wire Line
@@ -866,4 +737,173 @@ Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
 	3000 3050 3525 3050
+$Comp
+L MCU_Microchip_ATmega:ATmega32A-P U5
+U 1 1 5FA7B77E
+P -1150 2100
+F 0 "U5" H -1150 11  50  0000 C CNN
+F 1 "ATmega32A-P" H -1150 -80 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H -1150 2100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H -1150 2100 50  0001 C CNN
+	1    -1150 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel -200 3250 2    60   Input ~ 0
+DATA+
+Text GLabel -200 3350 2    60   Input ~ 0
+DATA-
+Wire Wire Line
+	-250 3300 -550 3300
+Wire Wire Line
+	-250 3400 -550 3400
+$Comp
+L power:GND #PWR0118
+U 1 1 5FA87E35
+P -1550 4100
+F 0 "#PWR0118" H -1550 3850 50  0001 C CNN
+F 1 "GND" H -1545 3927 50  0000 C CNN
+F 2 "" H -1550 4100 50  0001 C CNN
+F 3 "" H -1550 4100 50  0001 C CNN
+	1    -1550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1550 4100 -1150 4100
+Text GLabel -1800 400  0    60   Input ~ 0
+RESET
+Wire Wire Line
+	-1750 400  -1800 400 
+Wire Wire Line
+	-1050 100  -1050 50  
+Wire Wire Line
+	-1050 50   -1100 50  
+Wire Wire Line
+	-1150 50   -1150 100 
+Text Label -250 2200 0    60   ~ 0
+P0.15
+Text Label -250 1700 0    60   ~ 0
+P0.17
+Text Label -250 1100 0    60   ~ 0
+P0.20
+Text Label -250 800  0    60   ~ 0
+P0.09
+Text Label -250 700  0    60   ~ 0
+P0.10
+Text Label -250 1000 0    60   ~ 0
+P0.13
+Text Label -250 600  0    60   ~ 0
+P1.06
+Text Label -250 900  0    60   ~ 0
+P0.24
+Wire Wire Line
+	-250 400  -550 400 
+Wire Wire Line
+	-250 500  -550 500 
+Wire Wire Line
+	-250 600  -550 600 
+Wire Wire Line
+	-250 700  -550 700 
+Wire Wire Line
+	-250 800  -550 800 
+Wire Wire Line
+	-250 900  -550 900 
+Wire Wire Line
+	-250 1000 -550 1000
+Wire Wire Line
+	-250 1100 -550 1100
+Text Label -250 3800 0    60   ~ 0
+P1.11
+Text Label -250 2300 0    60   ~ 0
+P0.30
+Text Label -250 2400 0    60   ~ 0
+P0.31
+Text Label -250 2500 0    60   ~ 0
+P0.29
+Text Label -250 2600 0    60   ~ 0
+P0.02
+Text Label -250 2800 0    60   ~ 0
+P0.03
+Text Label -250 3700 0    60   ~ 0
+P0.28
+Text Label -250 2700 0    60   ~ 0
+P1.13
+Wire Wire Line
+	-250 1300 -550 1300
+Wire Wire Line
+	-250 1400 -550 1400
+Wire Wire Line
+	-250 1500 -550 1500
+Wire Wire Line
+	-250 1600 -550 1600
+Wire Wire Line
+	-250 1700 -550 1700
+Wire Wire Line
+	-250 2200 -550 2200
+Wire Wire Line
+	-250 2300 -550 2300
+Wire Wire Line
+	-250 2400 -550 2400
+Text Label -250 400  0    60   ~ 0
+P0.08
+Text Label -250 500  0    60   ~ 0
+P0.06
+Text GLabel -250 1800 2    60   Input ~ 0
+MOSI
+Text GLabel -250 1900 2    60   Input ~ 0
+MISO
+Text GLabel -250 2000 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	-250 1800 -550 1800
+Wire Wire Line
+	-250 1900 -550 1900
+Wire Wire Line
+	-250 2000 -550 2000
+Text Label -250 1300 0    60   ~ 0
+P0.22
+Text Label -250 1400 0    60   ~ 0
+P1.00
+Text Label -250 1500 0    60   ~ 0
+P1.02
+Text Label -250 1600 0    60   ~ 0
+P1.04
+Text Label -250 3600 0    60   ~ 0
+P0.07
+Text Label -250 3500 0    60   ~ 0
+P0.12
+Wire Wire Line
+	-250 3400 -250 3350
+Wire Wire Line
+	-250 3350 -200 3350
+Wire Wire Line
+	-250 3300 -250 3250
+Wire Wire Line
+	-250 3250 -200 3250
+Wire Wire Line
+	-250 3500 -550 3500
+Wire Wire Line
+	-250 3600 -550 3600
+Wire Wire Line
+	-250 3700 -550 3700
+Wire Wire Line
+	-250 3800 -550 3800
+Wire Wire Line
+	-250 2800 -550 2800
+Wire Wire Line
+	-250 2700 -550 2700
+Wire Wire Line
+	-250 2600 -550 2600
+Wire Wire Line
+	-250 2500 -550 2500
+NoConn ~ -1750 600 
+NoConn ~ -1750 800 
+NoConn ~ -1750 1000
+NoConn ~ -550 2900
+Text GLabel -1100 -50  1    60   Input ~ 0
+VBUS
+Wire Wire Line
+	-1100 -50  -1100 50  
+Connection ~ -1100 50  
+Wire Wire Line
+	-1100 50   -1150 50  
 $EndSCHEMATC

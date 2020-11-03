@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 11090)
+    (start_pass_no 1679)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.3)
+      (against_preferred_direction_trace_costs 3.1)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.4)
+      (against_preferred_direction_trace_costs 1.5)
     )
   )
   (rule
@@ -69,14 +69,13 @@
     )
   )
   (class "kicad_default"
-    GND RESET /P0.02 /P0.29 /P0.30 /P0.31 /P0.10 /P0.09
-    VBUS VBAT DATA+ "DATA-" /P1.13 /P1.11 /P0.20 /P0.13
-    /P0.15 /P0.17 /P0.22 /P0.24 "BLUE_LED" /P0.03 /P0.28 /P0.00
-    /P0.01 /P1.06 /P1.04 SWC SWD "POWER_PIN" /P0.26 DCCH
-    CC2 CC1 "EXT_VCC" "Net-(D2-Pad1)" /P1.00 /P1.02 /P0.12 "Net-(U2-Pad4)"
-    /P0.07 "nRF_VDD" "Net-(R5-Pad1)" /P0.06 /P0.08 "BATTERY_PIN" PROG "Net-(D3-Pad1)"
-    "Net-(R8-Pad2)" "Net-(D1-Pad1)" SCK MISO MOSI "Net-(J1-Pad32)" "Net-(J1-Pad29)" "Net-(J1-Pad14)"
-    "Net-(J1-Pad12)" "Net-(J1-Pad15)" "Net-(J1-Pad13)"
+    RESET /P0.02 /P0.29 /P0.30 /P0.31 /P0.10 /P0.09 DATA+
+    "DATA-" /P1.13 /P1.11 /P0.20 /P0.13 /P0.15 /P0.17 /P0.22
+    /P0.24 "BLUE_LED" /P0.03 /P0.28 /P0.00 /P0.01 /P1.06 /P1.04
+    SWC SWD "POWER_PIN" /P0.26 DCCH "EXT_VCC" "Net-(D2-Pad1)" /P1.00
+    /P1.02 /P0.12 "Net-(U2-Pad4)" /P0.07 "Net-(R5-Pad1)" /P0.06 /P0.08 "BATTERY_PIN"
+    PROG "Net-(D3-Pad1)" "Net-(R8-Pad2)" "Net-(D1-Pad1)" SCK MISO MOSI "Net-(J1-Pad32)"
+    "Net-(J1-Pad29)" "Net-(J1-Pad14)" "Net-(J1-Pad12)" "Net-(J1-Pad15)" "Net-(J1-Pad13)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -87,10 +86,11 @@
     )
   )
   (class Power
+    GND VBUS VBAT "nRF_VDD"
     (clearance_class Power)
     (via_rule Power)
     (rule
-      (width 200.0)
+      (width 300.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

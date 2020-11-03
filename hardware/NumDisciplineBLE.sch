@@ -737,173 +737,121 @@ Text GLabel 3000 3150 2    60   Input ~ 0
 nRF_VDD
 Wire Wire Line
 	3000 3050 3525 3050
-$Comp
-L MCU_Microchip_ATmega:ATmega32A-P U5
-U 1 1 5FA7B77E
-P -1150 2100
-F 0 "U5" H -1150 11  50  0000 C CNN
-F 1 "ATmega32A-P" H -1150 -80 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H -1150 2100 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H -1150 2100 50  0001 C CNN
-	1    -1150 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel -200 3250 2    60   Input ~ 0
-DATA+
-Text GLabel -200 3350 2    60   Input ~ 0
-DATA-
 Wire Wire Line
-	-250 3300 -550 3300
+	-2150 2600 -2450 2600
 Wire Wire Line
-	-250 3400 -550 3400
-$Comp
-L power:GND #PWR0118
-U 1 1 5FA87E35
-P -1550 4100
-F 0 "#PWR0118" H -1550 3850 50  0001 C CNN
-F 1 "GND" H -1545 3927 50  0000 C CNN
-F 2 "" H -1550 4100 50  0001 C CNN
-F 3 "" H -1550 4100 50  0001 C CNN
-	1    -1550 4100
-	1    0    0    -1  
-$EndComp
+	-2450 2500 -2150 2500
 Wire Wire Line
-	-1550 4100 -1150 4100
-Text GLabel -1800 400  0    60   Input ~ 0
-RESET
+	-2150 2400 -2450 2400
 Wire Wire Line
-	-1750 400  -1800 400 
-Wire Wire Line
-	-1050 100  -1050 50  
-Wire Wire Line
-	-1050 50   -1100 50  
-Wire Wire Line
-	-1150 50   -1150 100 
-Text Label -250 2200 0    60   ~ 0
-P0.15
-Text Label -250 1700 0    60   ~ 0
-P0.17
-Text Label -250 1100 0    60   ~ 0
-P0.20
-Text Label -250 800  0    60   ~ 0
-P0.09
-Text Label -250 700  0    60   ~ 0
-P0.10
-Text Label -250 1000 0    60   ~ 0
-P0.13
-Text Label -250 600  0    60   ~ 0
-P1.06
-Text Label -250 900  0    60   ~ 0
-P0.24
-Wire Wire Line
-	-250 400  -550 400 
-Wire Wire Line
-	-250 500  -550 500 
-Wire Wire Line
-	-250 600  -550 600 
-Wire Wire Line
-	-250 700  -550 700 
-Wire Wire Line
-	-250 800  -550 800 
-Wire Wire Line
-	-250 900  -550 900 
-Wire Wire Line
-	-250 1000 -550 1000
-Wire Wire Line
-	-250 1100 -550 1100
-Text Label -250 3800 0    60   ~ 0
-P1.11
-Text Label -250 2300 0    60   ~ 0
-P0.30
-Text Label -250 2400 0    60   ~ 0
-P0.31
-Text Label -250 2500 0    60   ~ 0
-P0.29
-Text Label -250 2600 0    60   ~ 0
-P0.02
-Text Label -250 2800 0    60   ~ 0
-P0.03
-Text Label -250 3700 0    60   ~ 0
-P0.28
-Text Label -250 2700 0    60   ~ 0
-P1.13
-Wire Wire Line
-	-250 1300 -550 1300
-Wire Wire Line
-	-250 1400 -550 1400
-Wire Wire Line
-	-250 1500 -550 1500
-Wire Wire Line
-	-250 1600 -550 1600
-Wire Wire Line
-	-250 1700 -550 1700
-Wire Wire Line
-	-250 2200 -550 2200
-Wire Wire Line
-	-250 2300 -550 2300
-Wire Wire Line
-	-250 2400 -550 2400
-Text Label -250 400  0    60   ~ 0
-P0.08
-Text Label -250 500  0    60   ~ 0
-P0.06
-Text GLabel -250 1800 2    60   Input ~ 0
-MOSI
-Text GLabel -250 1900 2    60   Input ~ 0
-MISO
-Text GLabel -250 2000 2    60   Input ~ 0
-SCK
-Wire Wire Line
-	-250 1800 -550 1800
-Wire Wire Line
-	-250 1900 -550 1900
-Wire Wire Line
-	-250 2000 -550 2000
-Text Label -250 1300 0    60   ~ 0
-P0.22
-Text Label -250 1400 0    60   ~ 0
-P1.00
-Text Label -250 1500 0    60   ~ 0
-P1.02
-Text Label -250 1600 0    60   ~ 0
-P1.04
-Text Label -250 3600 0    60   ~ 0
-P0.07
-Text Label -250 3500 0    60   ~ 0
+	-2450 2300 -2150 2300
+Text Label -2150 3500 2    60   ~ 0
 P0.12
-Wire Wire Line
-	-250 3400 -250 3350
-Wire Wire Line
-	-250 3350 -200 3350
-Wire Wire Line
-	-250 3300 -250 3250
-Wire Wire Line
-	-250 3250 -200 3250
-Wire Wire Line
-	-250 3500 -550 3500
-Wire Wire Line
-	-250 3600 -550 3600
-Wire Wire Line
-	-250 3700 -550 3700
-Wire Wire Line
-	-250 3800 -550 3800
-Wire Wire Line
-	-250 2800 -550 2800
-Wire Wire Line
-	-250 2700 -550 2700
-Wire Wire Line
-	-250 2600 -550 2600
-Wire Wire Line
-	-250 2500 -550 2500
-NoConn ~ -1750 600 
-NoConn ~ -1750 800 
-NoConn ~ -1750 1000
-NoConn ~ -550 2900
-Text GLabel -1100 -50  1    60   Input ~ 0
+Text Label -2150 3600 2    60   ~ 0
+P0.07
+Text Label -2150 3700 2    60   ~ 0
+P0.28
+Text GLabel -2400 3400 0    60   Input ~ 0
+DATA-
+Text GLabel -2400 3300 0    60   Input ~ 0
+DATA+
+$Comp
+L power:GND #PWR0111
+U 1 1 5FA32D25
+P -2900 2800
+F 0 "#PWR0111" H -2900 2550 50  0001 C CNN
+F 1 "GND" H -2895 2627 50  0000 C CNN
+F 2 "" H -2900 2800 50  0001 C CNN
+F 3 "" H -2900 2800 50  0001 C CNN
+	1    -2900 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel -2450 2700 0    60   Input ~ 0
 VBUS
+Text GLabel -2450 2600 0    60   Input ~ 0
+RESET
+Text Label -2150 2100 2    60   ~ 0
+P1.04
+Text Label -2150 2000 2    60   ~ 0
+P1.02
+Text Label -2150 1900 2    60   ~ 0
+P1.00
+Text Label -2150 1800 2    60   ~ 0
+P0.22
+Text GLabel -2450 2500 0    60   Input ~ 0
+SCK
+Text GLabel -2450 2400 0    60   Input ~ 0
+MISO
+Text GLabel -2450 2300 0    60   Input ~ 0
+MOSI
+Text Label -2150 2200 2    60   ~ 0
+P0.17
 Wire Wire Line
-	-1100 -50  -1100 50  
-Connection ~ -1100 50  
+	-2450 2700 -2150 2700
 Wire Wire Line
-	-1100 50   -1150 50  
+	-2150 2800 -2900 2800
+Wire Wire Line
+	-2150 3300 -2400 3300
+Wire Wire Line
+	-2150 3400 -2400 3400
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J1
+U 1 1 5FAA6BCE
+P -1950 2700
+F 0 "J1" H -1900 3817 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H -1900 3726 50  0000 C CNN
+F 2 "nrfmicro:2x20_P2.54mm_Vertical_SMD_reversed" H -1950 2700 50  0001 C CNN
+F 3 "~" H -1950 2700 50  0001 C CNN
+	1    -1950 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel -1500 2800 2    60   Input ~ 0
+VBUS
+Text Label -1650 3700 0    60   ~ 0
+P1.11
+Text Label -1650 3600 0    60   ~ 0
+P0.15
+Text Label -1650 3500 0    60   ~ 0
+P0.30
+Text Label -1650 3400 0    60   ~ 0
+P0.31
+Text Label -1650 3300 0    60   ~ 0
+P0.29
+Text Label -1650 3200 0    60   ~ 0
+P0.02
+Text Label -1650 3000 0    60   ~ 0
+P0.03
+Text Label -1650 3100 0    60   ~ 0
+P1.13
+Text Label -1650 2500 0    60   ~ 0
+P0.20
+Text Label -1650 2200 0    60   ~ 0
+P0.09
+Text Label -1650 2100 0    60   ~ 0
+P0.10
+Text Label -1650 2400 0    60   ~ 0
+P0.13
+Text Label -1650 2000 0    60   ~ 0
+P1.06
+Text Label -1650 2300 0    60   ~ 0
+P0.24
+Text Label -1650 1800 0    60   ~ 0
+P0.08
+Text Label -1650 1900 0    60   ~ 0
+P0.06
+Wire Wire Line
+	-1500 2800 -1650 2800
+$Comp
+L power:GND #PWR0113
+U 1 1 5FAACC3A
+P -900 2700
+F 0 "#PWR0113" H -900 2450 50  0001 C CNN
+F 1 "GND" H -895 2527 50  0000 C CNN
+F 2 "" H -900 2700 50  0001 C CNN
+F 3 "" H -900 2700 50  0001 C CNN
+	1    -900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1650 2700 -900 2700
 $EndSCHEMATC
